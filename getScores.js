@@ -1,11 +1,15 @@
 
 var getScores = function(wordsFlat){
 
-	// -----------------------------------
-	//  YOUR CODE
-	//  Count the word frequency
-	//  Return object with word counts
-	// -----------------------------------	
+	var scores = {}
+		for (i = 0; i < wordsFlat.length; i++) {
+		var word = wordsFlat[i];
+			if (!scores[word]) {
+			scores[word] = 1;
+		} else {
+		scores[word]++;
+		}
+	}
 
 	return scores;
 
